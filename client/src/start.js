@@ -32,6 +32,9 @@ const theme = createTheme({
         },
     },
     typography: {
+        h2: {
+            fontFamily: "'Poppins', sans-serif",
+        },
         h3: {
             fontFamily: "'Poppins', sans-serif",
         },
