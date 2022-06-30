@@ -19,6 +19,7 @@ function HideOnScroll(props) {
 }
 
 export default function Header(props) {
+    console.log('hi');
     return (
         <HideOnScroll {...props}>
             <AppBar

@@ -7,23 +7,34 @@ import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#4D774E',
+            main: '#F40058',
             // contrastText: '#d1e9c8',
         },
         secondary: {
-            main: '#F1B24A',
+            main: '#161B40',
         },
         customOne: {
-            main: '#164A41',
+            main: '#EFA500',
         },
         customTwo: {
-            main: '#9DC88D',
+            main: '#41B853',
         },
         customThree: {
-            main: '#FFFFFF',
+            main: '#43BEEE5',
+        },
+        text: {
+            customOne: '#F40058',
+            customTwo: '#161B40',
+            customThree: '#EFA500',
+            customFour: '#41B853',
+            customFive: '#43BEEE',
+            customWhite: '#FFFFF5',
         },
     },
     typography: {
+        h3: {
+            fontFamily: "'Poppins', sans-serif",
+        },
         button: {
             textTransform: 'none',
             fontFamily: "'Poppins', sans-serif",
