@@ -1,10 +1,19 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    padding: 0 3vw 0 3vw;
+}
+
 .greetingsBox {
     margin-top: 80px;
 }
 
 .carouselContainer {
     width: fit-content;
+}
+
+.css-13ax285-MuiImageListItem-root .MuiImageListItem-img {
+    object-fit: none;
 }

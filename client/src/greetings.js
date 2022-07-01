@@ -19,9 +19,10 @@ export default function Greetings() {
 
     const animatedPropsBox = useSpring({
         opacity: 1,
-        marginLeft: 10,
-        from: { marginLeft: -1000, opacity: 0 },
-        config: config.slow,
+        marginTop: 80,
+        delay: 500,
+        from: { marginTop: -100, opacity: 0 },
+        config: config.molasses,
         onRest: () => setBoxLoaded(true),
     });
 
@@ -58,7 +59,7 @@ export default function Greetings() {
             opacity: 0,
             clipPath: 'polygon(0% 0%, 0% 0%, 100% 100%, 100% 100%)',
         },
-        config: { duration: 6000 },
+        config: { duration: 4000 },
     });
 
     useLayoutEffect(() => {
@@ -78,7 +79,7 @@ export default function Greetings() {
                 <Box
                     boxShadow="8"
                     sx={{
-                        width: '95vw',
+                        width: '94vw',
                         height: '50vh',
                         padding: 10,
                         backgroundColor: 'secondary.main',

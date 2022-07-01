@@ -3,7 +3,7 @@ const app = express();
 const compression = require('compression');
 const path = require('path');
 // const cookieSession = require('cookie-session');
-const db = require('./database');
+const { getProjects } = require('./database');
 
 app.use(express.json());
 
@@ -19,6 +19,12 @@ app.use(compression());
 //     sameSite: true,
 // });
 // app.use(cookieSessionMiddleware);
+
+app.get('/api/get-projects', async (req, res) => {
+    const projects = await getProjects();
+    res.json(projects);
+});
+
 app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, '..', 'client', 'index.html'));
 });
